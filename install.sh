@@ -282,6 +282,7 @@
     hide_output sudo ufw allow 3573/tcp
     hide_output sudo ufw allow 3535/tcp
     hide_output sudo ufw allow 3533/tcp
+    hide_output sudo ufw allow 3888/tcp
     hide_output sudo ufw allow 3553/tcp
     hide_output sudo ufw allow 3633/tcp
     hide_output sudo ufw allow 3733/tcp
@@ -369,7 +370,7 @@
     
     # Compil Blocknotify
     cd ~
-    hide_output git clone https://github.com/tpruvot/yiimp
+    hide_output git clone https://github.com/zipevo/yiimp
     cd $HOME/yiimp/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     hide_output sudo make
